@@ -21,8 +21,13 @@
             height: 100%; /* Tinggi video */
         }
         .description {
+            position: absolute;
+            top: calc(50% + 50px); /* Tengah vertikal + margin atas */
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
             margin-top: 20px;
+            z-index: 1; /* Memberikan z-index yang lebih tinggi */
         }
     </style>
 </head>
