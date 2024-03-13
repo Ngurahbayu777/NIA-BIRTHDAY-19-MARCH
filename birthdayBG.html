@@ -9,16 +9,16 @@
     <style>
         /* CSS untuk membuat video ditengah */
         .video-container {
-            position: relative;
-            width: 50%; /* Lebar maksimal */
-            padding-top: 56.25%; /* 16:9 aspect ratio */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%; /* Lebar video */
+            max-width: 560px; /* Lebar maksimal video */
         }
         .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%; /* Lebar maksimal */
-            height: 50%; /* Tinggi maksimal */
+            width: 100%; /* Lebar video */
+            height: 100%; /* Tinggi video */
         }
         .description {
             text-align: center;
