@@ -22,14 +22,14 @@ body {
 
 .nextButton {
   position: absolute;
-  z-index: 50;
-  top: 20px; /* Sesuaikan dengan jarak dari bawah halaman */
+  z-index: 100;
+  top: 40px; /* Sesuaikan dengan jarak dari bawah halaman */
   right: 20px;
   padding: 5px 10px;
   background-color: #6bf0ff;
   color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 10px;
 }
