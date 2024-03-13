@@ -22,11 +22,12 @@
         }
         .description {
             position: absolute;
-            top: calc(50% + 50px); /* Tengah vertikal + margin atas */
+            top: calc(50% - 150px); /* Tengah vertikal - setengah tinggi deskripsi */
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            margin-top: 20px;
+            background-color: white; /* Latar belakang putih */
+            padding: 20px; /* Padding untuk memberi ruang di sekitar teks */
             z-index: 1; /* Memberikan z-index yang lebih tinggi */
         }
     </style>
@@ -34,14 +35,14 @@
 <body>
     <div class="night"></div>
 
-    <!-- Video -->
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/WwvIVgWad20" frameborder="0" allowfullscreen></iframe>
-    </div>
-
     <!-- Deskripsi -->
     <div class="description">
         <span>Udah lihat bunganya kan? Sekarang tonton videonya ya!</span>
+    </div>
+
+    <!-- Video -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/WwvIVgWad20" frameborder="0" allowfullscreen></iframe>
     </div>
 </body>
 </html>
