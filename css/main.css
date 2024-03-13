@@ -22,7 +22,7 @@ body {
 
 .nextButton {
   position: fixed;
-  z-index: 50;
+  z-index: 1000;
   bottom: 20px; /* Sesuaikan dengan jarak dari bawah halaman */
   right: 20px;
   padding: 5px 10px;
