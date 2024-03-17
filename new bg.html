@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="img/flowers.png" type="image/x-icon">
   <title>flower</title>
+  <link rel="stylesheet" href="style.css"> <!-- Tautan ke file CSS terpisah -->
   <style>
     body {
       margin: 0;
@@ -38,6 +39,7 @@
       /* Tinggi gambar disesuaikan secara otomatis */
       margin: -370px;
     }
+
   </style>
 </head>
 
@@ -45,8 +47,8 @@
   <div class="audio">
     <!-- Hapus keterangan audio -->
     <!-- <audio id="flowerAudio" controls preload="auto" loop playsinline>
-                      <source src="https://top4top.io/del599e67cc9225f304f6a570acae3b50eb.html" type="audio/mpeg">
-                  </audio> -->
+                  <source src="https://top4top.io/del599e67cc9225f304f6a570acae3b50eb.html" type="audio/mpeg">
+              </audio> -->
   </div>
   <div class="night"></div>
 
@@ -55,26 +57,37 @@
     <button class="playButton" id="playButton" onclick="playAudio()">Play Music</button>
 
     <!-- Gambar dari GitHub -->
-    <img src="https://github.com/Ngurahbayu777/nyayaysd/blob/main/img/ASTUNGKARA%20PIXXXYUUU.png?raw=true"
+    <img src="https://github.com/Ngurahbayu777/nyayaysd/blob/main/img/Udah%20lihat%20videonya%20kan%20nn.png?raw=true"
       alt="Deskripsi gambar" class="image" id="flowerImage">
   </div>
 
+  <!-- Tombol Next -->
+  <div class="nextButton3" id="nextButton3"><a
+      href="https://204cf1fc-eb43-47e9-b80e-31300ed2ea00-00-prias99bf9rg.pike.replit.dev/">Silahkan Klik Ini Aja Kalau
+      Mager Ngescan</a>
+  </div>
+
   <script>
-    function playAudio() {
-      // Ambil elemen audio
-      var audio = new Audio("https://l.top4top.io/m_2997cr7cx1.mp3");
-      var image = document.getElementById("flowerImage");
-      var playButton = document.getElementById("playButton");
+   function playAudio() {
+  // Ambil elemen audio
+  var audio = new Audio("https://l.top4top.io/m_2997cr7cx1.mp3");
+  var image = document.getElementById("flowerImage");
+  var playButton = document.getElementById("playButton");
+  var nextButton = document.getElementById("nextButton3"); // Menggunakan ID yang benar
+  
+  // Munculkan gambar setelah tombol play ditekan
+  image.style.display = "block";
+  
+  // Sembunyikan tombol play
+  playButton.style.display = "none";
+  
+  // Tampilkan tombol nextButton
+  nextButton.style.display = "block"; // Mengubah display menjadi block
+  
+  // Mulai audio
+  audio.play();
+}
 
-      // Munculkan gambar setelah tombol play ditekan
-      image.style.display = "block";
-
-      // Sembunyikan tombol play
-      playButton.style.display = "none";
-
-      // Mulai audio
-      audio.play();
-    }
   </script>
 </body>
 
