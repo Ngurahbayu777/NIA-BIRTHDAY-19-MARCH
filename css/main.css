@@ -30,6 +30,7 @@ body {
   color: black;
   border: none;
   border-radius: 10px;
+  font-family: Arial, sans-serif;
   cursor: pointer;
   font-size: 10px;
 }
@@ -39,6 +40,7 @@ body {
   font-weight: bold;
   color: #000;
   background-color: #6bf0ff;
+
 }
 
 .playButton {
@@ -61,6 +63,30 @@ body {
 
 .playButton:hover {
   background-color: #16d2e7;
+}
+.nextButton3 {
+  display: none;
+  /* Awalnya disembunyikan */
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #ccc; /* Ubah warna menjadi abu-abu */
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  margin: 5px;
+}
+
+.nextButton3 a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .night {
